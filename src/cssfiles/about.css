@@ -1,0 +1,96 @@
+.about {
+    padding: 10px 60px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #me1{
+    font-size: 36px;
+    text-align: center;
+    color: blueviolet;
+  }
+  .aboutme {
+    display: flex;
+    gap: 50px;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .myinfo {
+    flex: 1;
+    margin-top: -30px;
+  }
+  .myinfo h2{
+    font-size: 30px;
+    color: #4b0082;
+  }
+  .myinfo label{
+    font-size: 18px;
+  }
+  .myimg img {
+    width: 280px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  /* Tablet view (up to 768px) */
+@media (max-width: 768px) {
+  .about {
+    padding: 10px 30px;
+  }
+
+  .aboutme {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .myimg img {
+    width: 220px;
+    height: 240px;
+  }
+
+  .myinfo h2 {
+    font-size: 26px;
+  }
+
+  .myinfo label {
+    font-size: 16px;
+  }
+
+  #me1 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile view (up to 480px) */
+@media (max-width: 480px) {
+  .about {
+    padding: 40px;
+  }
+
+  .aboutme {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .myimg img {
+    width: 220px;
+    height: 200px;
+  }
+
+  .myinfo h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .myinfo label {
+    font-size: 15px;
+  }
+
+  #me1 {
+    font-size: 26px;
+  }
+}

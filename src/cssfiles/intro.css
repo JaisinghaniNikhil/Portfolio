@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.incont1 {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.intro-label {
+  font-size: 22px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+  width: 0;
+  animation: typing 2s steps(22, end) forwards, blink 0.7s step-end 3;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 195px; /* adjust based on actual text length */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.incont1 h2 {
+  font-size: 50px;
+  color: blueviolet;
+  margin: 0;
+}
+
+.incont1 h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #444;
+  margin: 0;
+}
+
+.intro-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.cv-btn {
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cv-btn:hover {
+  background-color: chartreuse;
+  transform: translateY(-2px);
+}
+
+.incont2 img {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .intro-label {
+    font-size: 18px;
+    animation: typing 2s steps(18, end) forwards, blink 0.7s step-end 3;
+  }
+  .incont1{
+    padding: 10px 40px;
+  }
+
+  .incont1 h2 {
+    font-size: 32px;
+    
+  }
+
+  .incont1 h3 {
+    font-size: 20px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+
+  .cv-btn {
+    width: 100%;
+    max-width: 160px;
+    
+  }
+
+  .incont2 img {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
