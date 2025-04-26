@@ -14,7 +14,9 @@ function Intro() {
           I enjoy exploring new technologies, improving my skills, and turning ideas into real, useful applications.
         </p>
         <button className='cv-btn'>  <a 
-          href="/NIKHIL JAISINGHANI (2).pdf " 
+          href="../../public/JNIKHIL.pdf"
+          target="_blank" 
+          rel="noopener noreferrer" 
         >
           View CV
         </a></button>

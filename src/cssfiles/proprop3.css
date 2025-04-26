@@ -19,6 +19,11 @@
   width: 90%;
   max-height: 500px;
   border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.img1 img:hover {
+  transform: scale(1.05);
 }
 
 .content {
@@ -91,7 +96,7 @@
 
 @media (max-width: 480px) {
   .foodcont {
-      margin: 40px;
+      margin: 10px;
       
   }
 
